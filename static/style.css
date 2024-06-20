@@ -39,6 +39,18 @@ body {
     transition: all .5s ease-in-out;
 }
 
+/* Add this to your CSS */
+.chatbox--expanded {
+    width: 800px; /* Set the width to the expanded size */
+    height: 600px; /* Set the height to the expanded size */
+}
+
+.chatbox__support.chatbox--expanded {
+    width: 500px;
+    height: 550px;
+    bottom :20px;
+}
+
 /* CONTENT ISOPEN */
 .chatbox--active {
     transform: translateY(-40px);
@@ -63,6 +75,7 @@ body {
 
 /* HEADER */
 .chatbox__header {
+    text-align: left;
     position: sticky;
     top: 0;
     background: orange;
@@ -110,16 +123,28 @@ body {
     background: var(--primaryGradient);
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: space-between;
     padding: 15px 20px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     box-shadow: var(--primaryBoxShadow);
 }
 
+.chatbox__content--header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align the text to the left */
+}
+
+.chatbox__expand__button{
+    align-items: right;
+    justify-content: right;
+}
+
 .chatbox__image--header {
-    margin-right: 10px;
+    margin-left: 10px;
+    
 }
 
 .chatbox__heading--header {
