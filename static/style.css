@@ -137,9 +137,26 @@ body {
     align-items: flex-start; /* Align the text to the left */
 }
 
-.chatbox__expand__button{
-    align-items: right;
-    justify-content: right;
+.chatbox__expand {
+    align-items: stretch;
+    flex-direction: column;
+    justify-content: center;
+    background: #6c0ec4; /* Off white background */
+    border-radius: 10%; /* Make the button round */
+    padding: 3px; /* Add some padding */
+    border: none; /* Remove border */
+    cursor: default; /* Change cursor to pointer */
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+.chatbox__expand__button {
+    align-items: center;
+    justify-content: stretch;
+    background: #ffffff; /* Off white background */
+    border-radius: 10%; /* Make the button round */
+    padding: 5px; /* Add some padding */
+    border: none; /* Remove border */
+    cursor: pointer; /* Change cursor to pointer */
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); /* Add box shadow */
 }
 
 .chatbox__image--header {
