@@ -6,7 +6,11 @@ app = Flask(__name__)
 
 @app.get('/')
 def index_get():
-    return render_template('base.html')
+    return render_template('index.html')
+
+@app.get('/properties.html')
+def properties_get():
+    return render_template('properties.html')   
 
 @app.post('/predict')
 def predict():
